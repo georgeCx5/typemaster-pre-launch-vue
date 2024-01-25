@@ -42,13 +42,14 @@ const images: Array<string> = [
 </script>
 <template>
    <body class=" flex flex-col justify-center items-center bg-neo-white text-neo-dark-gray font-barlow">
-      <nav class=" flex justify-between items-center w-full max-w-[375px] mb-16 pt-6 px-6">
+      <nav
+         class=" flex justify-between items-center w-full max-w-[425px] TB:max-w-[1024px] mb-16 pt-6 TB:pt-10 px-6 TB:px-10">
          <img :src="logo" alt="logo" class=" w-10 h-10">
          <ButtonNav btn-text="Pre-order now" />
       </nav>
-      <main class=" flex flex-col w-full max-w-[375px] mb-24 overflow-hidden">
-         <section class=" flex flex-col gap-16 mb-6">
-            <div class=" flex flex-col gap-8 px-6">
+      <main class=" flex flex-col w-full max-w-[425px] TB:max-w-[1024px] mb-24 TB:mb-[9rem] overflow-hidden">
+         <section class=" flex flex-col TB:flex-row TB:items-center gap-16 TB:gap-[4.25rem] mb-6 TB:mb-10">
+            <div class=" flex flex-col gap-8 TB:gap-10 TB:min-w-[49.5%] px-6 TB:pl-10 TB:pr-0">
                <div class=" flex flex-col gap-8">
                   <h1 class=" text-5xl leading-[3rem] font-black uppercase">
                      Typemaster keyboard</h1>
@@ -57,38 +58,40 @@ const images: Array<string> = [
                      mechanical typing experience.
                   </p>
                </div>
-               <div class=" flex items-center gap-8">
+               <div class=" flex items-center gap-8 TB:gap-9">
                   <ButtonMain btn-text="Pre-order now" />
                   <h4 class=" text-neo-gray leading-[1.625rem] font-bold uppercase">
                      Release on 5/27</h4>
                </div>
             </div>
-            <div>
-               <div :class="` relative -right-6 ${images[0]} w-full h-[331px] bg-cover rounded-[1.25rem]`" />
+            <div class="">
+               <div
+                  :class="` relative -right-6 ${images[0]} w-full TB:w-[478px] h-[331px] TB:h-[425px] bg-cover rounded-[1.25rem]`" />
             </div>
          </section>
-         <section class=" flex flex-col gap-[4.5rem] mb-[7rem]">
-            <div class=" relative -left-6 flex gap-6 h-[193px]">
-               <div class=" bg-neo-orange rounded-2xl overflow-hidden">
-                  <div :class="` w-[129px] h-full ${images[2]} bg-cover opacity-[.25] contrast-150`" />
+         <section class=" flex flex-col gap-[4.5rem] mb-[7rem] TB:mb-[11rem]">
+            <div
+               class=" relative -left-6 TB:left-0 flex TB:justify-between gap-6 TB:gap-8 h-[193px] TB:h-[320px] TB:px-10">
+               <div class=" bg-neo-orange rounded-2xl overflow-hidden w-[55%] TB:w-[45%]">
+                  <div :class="` w-full h-full ${images[2]} bg-cover opacity-[.25] contrast-150`" />
                </div>
-               <div :class="`${images[1]} w-[220px] h-full bg-cover rounded-2xl`" />
+               <div :class="`${images[1]} w-full h-full bg-cover rounded-2xl`" />
             </div>
-            <div class=" flex flex-col gap-6 px-6 text-center">
-               <h2 class=" px-6 text-[2rem] leading-[2.25rem] font-black uppercase">
+            <div class=" flex flex-col TB:flex-row TB:items-center gap-6 TB:gap-9 px-6 TB:px-10 text-center TB:text-left">
+               <h2 class=" px-6 TB:px-0 TB:pr-6 text-[2rem] leading-[2.25rem] font-black uppercase">
                   Mechanical wireless keyboard</h2>
                <p class=" text-neo-gray leading-[1.625rem] font-medium">
                   The Typemaster keyboard boasts top-notch build and practical design. It offers a wide variety
                   of switches and keycaps, along with reliable wireless connectivity.</p>
             </div>
          </section>
-         <section class=" flex flex-col gap-16 px-6">
+         <section class=" grid TB:grid-cols-2 gap-16 TB:gap-x-16 TB:gap-y-[4.5rem] px-6 TB:pl-10 TB:pr-24">
             <article v-for="f in features">
                <FeatureComponent :logo="f.logo" :title="f.title" :description="f.description" />
             </article>
          </section>
       </main>
-      <footer class=" mb-12 text-neo-gray leading-[1.625rem] font-medium">
+      <footer class=" mb-12 TB:mb-11 text-neo-gray leading-[1.625rem] font-medium">
          <span class=" font-bold">Typemaster 2021 |</span> All Rights Reserved
       </footer>
    </body>
