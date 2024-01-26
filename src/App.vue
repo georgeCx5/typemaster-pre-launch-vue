@@ -70,7 +70,7 @@ const images: Array<string> = [
             <div
                class=" relative -right-6 DT:right-[-.25rem] flex justify-between DT:min-w-[825px] DT:w-[64.75%]">
                <div
-                  :class="`  ${images[0]} w-full TB:w-[478px] DT:min-w-[540px] DT:w-[65.5%] h-[331px] TB:h-[425px] bg-cover rounded-[1.25rem]`" />
+                  :class="`  ${images[0]} w-full TB:w-[478px] DT:min-w-[540px] DT:w-[65.5%] h-[331px] TB:h-[425px] DT:h-[480px] bg-cover rounded-[1.25rem]`" />
                <div class=" hidden DT:block min-w-[255px] w-[31%] h-[240px] bg-neo-light-gray rounded-[1.25rem]" />
             </div>
          </section>
