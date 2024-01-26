@@ -52,7 +52,7 @@ const images: Array<string> = [
          <section
             class=" flex flex-col TB:flex-row TB:items-center gap-16 TB:gap-[4.25rem] DT:gap-[7.75rem] mb-6 TB:mb-10 DT:mb-[1.875rem] DT:pl-[10.25rem]">
             <div
-               class=" flex flex-col gap-8 TB:gap-10 TB:min-w-[49.5%] DT:min-w-[445px] DT:w-[35%] px-6 TB:pl-10 TB:pr-0 DT:px-0">
+               class=" flex flex-col gap-8 TB:gap-10 TB:min-w-[49.5%] DT:min-w-[445px] DT:w-[35%] DT:mb-6 px-6 TB:pl-10 TB:pr-0 DT:px-0">
                <div class=" flex flex-col gap-8 DT:gap-6">
                   <h1 class=" text-5xl DT:text-[3.5rem] leading-[3rem] DT:leading-[3.5rem] font-black uppercase">
                      Typemaster keyboard</h1>
