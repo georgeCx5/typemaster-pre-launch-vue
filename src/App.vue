@@ -44,7 +44,7 @@ const images: Array<string> = [
    <body class=" flex flex-col justify-center items-center bg-neo-white text-neo-dark-gray font-barlow">
       <nav
          class=" flex justify-between items-center w-full max-w-[425px] TB:max-w-[1024px] DT:max-w-[1920px] mb-16 DT:mb-[5.25rem] pt-6 TB:pt-10 DT:pt-14 px-6 TB:px-10 DT:px-[10.25rem]">
-         <img :src="logo" alt="logo" class=" w-10 h-10">
+         <img :src="logo" alt="logo" class=" w-10 h-10 select-none">
          <ButtonNav btn-text="Pre-order now" />
       </nav>
       <main
@@ -63,7 +63,7 @@ const images: Array<string> = [
                </div>
                <div class=" flex items-center gap-8 TB:gap-9 DT:gap-10">
                   <ButtonMain btn-text="Pre-order now" />
-                  <h4 class=" text-neo-gray leading-[1.625rem] font-bold uppercase">
+                  <h4 class=" text-neo-gray leading-[1.625rem] font-bold uppercase select-none">
                      Release on 5/27</h4>
                </div>
             </div>

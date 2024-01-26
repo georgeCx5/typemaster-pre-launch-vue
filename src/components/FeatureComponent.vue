@@ -7,7 +7,7 @@ defineProps({
 </script>
 <template>
    <article class=" flex flex-col items-center TB:items-start gap-12 TB:gap-10 DT:gap-12 text-center TB:text-left">
-      <div class=" flex justify-center items-center w-16 h-16 bg-neo-orange rounded-2xl">
+      <div class=" flex justify-center items-center w-16 h-16 bg-neo-orange rounded-2xl select-none">
          <img :src="logo" :alt="title">
       </div>
       <div class=" flex flex-col gap-6">
