@@ -43,14 +43,17 @@ const images: Array<string> = [
 <template>
    <body class=" flex flex-col justify-center items-center bg-neo-white text-neo-dark-gray font-barlow">
       <nav
-         class=" flex justify-between items-center w-full max-w-[425px] TB:max-w-[1024px] mb-16 pt-6 TB:pt-10 px-6 TB:px-10">
+         class=" flex justify-between items-center w-full max-w-[425px] TB:max-w-[1024px] DT:max-w-[1920px] mb-16 DT:mb-[5.25rem] pt-6 TB:pt-10 DT:pt-14 px-6 TB:px-10 DT:px-[10.25rem]">
          <img :src="logo" alt="logo" class=" w-10 h-10">
          <ButtonNav btn-text="Pre-order now" />
       </nav>
-      <main class=" flex flex-col w-full max-w-[425px] TB:max-w-[1024px] mb-24 TB:mb-[9rem] overflow-hidden">
-         <section class=" flex flex-col TB:flex-row TB:items-center gap-16 TB:gap-[4.25rem] mb-6 TB:mb-10">
-            <div class=" flex flex-col gap-8 TB:gap-10 TB:min-w-[49.5%] px-6 TB:pl-10 TB:pr-0">
-               <div class=" flex flex-col gap-8">
+      <main
+         class=" flex flex-col w-full max-w-[425px] TB:max-w-[1024px] DT:max-w-[1920px] mb-24 TB:mb-[9rem] DT:mb-[8rem] overflow-hidden">
+         <section
+            class=" flex flex-col TB:flex-row TB:items-center gap-16 TB:gap-[4.25rem] DT:gap-[7.75rem] mb-6 TB:mb-10 DT:mb-[1.875rem] DT:pl-[10.25rem]">
+            <div
+               class=" flex flex-col gap-8 TB:gap-10 TB:min-w-[49.5%] DT:min-w-[445px] DT:w-[35%] px-6 TB:pl-10 TB:pr-0 DT:px-0">
+               <div class=" flex flex-col gap-8 DT:gap-6">
                   <h1 class=" text-5xl leading-[3rem] font-black uppercase">
                      Typemaster keyboard</h1>
                   <p class=" text-neo-gray leading-[1.625rem] font-medium">
@@ -58,26 +61,32 @@ const images: Array<string> = [
                      mechanical typing experience.
                   </p>
                </div>
-               <div class=" flex items-center gap-8 TB:gap-9">
+               <div class=" flex items-center gap-8 TB:gap-9 DT:gap-10">
                   <ButtonMain btn-text="Pre-order now" />
                   <h4 class=" text-neo-gray leading-[1.625rem] font-bold uppercase">
                      Release on 5/27</h4>
                </div>
             </div>
-            <div class="">
+            <div
+               class=" relative -right-6 DT:right-[-.25rem] flex justify-between DT:min-w-[825px] DT:w-[64.75%]">
                <div
-                  :class="` relative -right-6 ${images[0]} w-full TB:w-[478px] h-[331px] TB:h-[425px] bg-cover rounded-[1.25rem]`" />
+                  :class="`  ${images[0]} w-full TB:w-[478px] DT:min-w-[540px] DT:w-[65.5%] h-[331px] TB:h-[425px] bg-cover rounded-[1.25rem]`" />
+               <div class=" hidden DT:block min-w-[255px] w-[31%] h-[240px] bg-neo-light-gray rounded-[1.25rem]" />
             </div>
          </section>
-         <section class=" flex flex-col gap-[4.5rem] mb-[7rem] TB:mb-[11rem]">
+         <section
+            class=" flex flex-col DT:flex-row DT:items-center DT:justify-between gap-[4.5rem] DT:gap-1 mb-[7rem] TB:mb-[11rem] DT:mb-[10.5rem] DT:pr-[10.25rem]">
             <div
-               class=" relative -left-6 TB:left-0 flex TB:justify-between gap-6 TB:gap-8 h-[193px] TB:h-[320px] TB:px-10">
-               <div class=" bg-neo-orange rounded-2xl overflow-hidden w-[55%] TB:w-[45%]">
+               class=" relative -left-6 TB:left-0 DT:left-[-7.5rem] flex TB:justify-between gap-6 TB:gap-8 DT:gap-[1.875rem] DT:min-w-[1015px] DT:w-[79.5%] h-[193px] TB:h-[320px] DT:h-[480px] TB:px-10 DT:px-0">
+               <div
+                  class=" hidden DT:block self-end w-[25%] min-w-[256px] h-[14.75rem] bg-neo-light-gray rounded-[1.25rem]" />
+               <div class=" bg-neo-orange rounded-2xl overflow-hidden w-[55%] TB:w-[45%] DT:w-[25%] DT:min-w-[255px]">
                   <div :class="` w-full h-full ${images[2]} bg-cover opacity-[.25] contrast-150`" />
                </div>
-               <div :class="`${images[1]} w-full h-full bg-cover rounded-2xl`" />
+               <div :class="`${images[1]} w-full DT:w-[44%] DT:min-w-[445px] h-full bg-cover rounded-2xl`" />
             </div>
-            <div class=" flex flex-col TB:flex-row TB:items-center gap-6 TB:gap-9 px-6 TB:px-10 text-center TB:text-left">
+            <div
+               class=" flex flex-col TB:flex-row DT:flex-col TB:items-center gap-6 TB:gap-9 DT:w-[20%] px-6 TB:px-10 DT:px-0 text-center TB:text-left">
                <h2 class=" px-6 TB:px-0 TB:pr-6 text-[2rem] leading-[2.25rem] font-black uppercase">
                   Mechanical wireless keyboard</h2>
                <p class=" text-neo-gray leading-[1.625rem] font-medium">
@@ -85,13 +94,12 @@ const images: Array<string> = [
                   of switches and keycaps, along with reliable wireless connectivity.</p>
             </div>
          </section>
-         <section class=" grid TB:grid-cols-2 gap-16 TB:gap-x-16 TB:gap-y-[4.5rem] px-6 TB:pl-10 TB:pr-24">
-            <article v-for="f in features">
-               <FeatureComponent :logo="f.logo" :title="f.title" :description="f.description" />
-            </article>
+         <section
+            class=" grid TB:grid-cols-2 DT:grid-cols-4 gap-16 TB:gap-x-16 TB:gap-y-[4.5rem] DT:gap-8 px-6 TB:pl-10 TB:pr-24 DT:px-[10.25rem]">
+            <FeatureComponent v-for="f in features" :logo="f.logo" :title="f.title" :description="f.description" />
          </section>
       </main>
-      <footer class=" mb-12 TB:mb-11 text-neo-gray leading-[1.625rem] font-medium">
+      <footer class=" mb-12 TB:mb-11 DT:mb-10 text-neo-gray leading-[1.625rem] font-medium">
          <span class=" font-bold">Typemaster 2021 |</span> All Rights Reserved
       </footer>
    </body>
