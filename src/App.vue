@@ -56,7 +56,7 @@ const images: Array<string> = [
                <div class=" flex flex-col gap-8 DT:gap-6">
                   <h1 class=" text-5xl DT:text-[3.5rem] leading-[3rem] DT:leading-[3.5rem] font-black uppercase">
                      Typemaster keyboard</h1>
-                  <p class=" text-neo-gray leading-[1.625rem] font-medium">
+                  <p class=" text-neo-gray DT:text-[1.125rem] leading-[1.625rem] font-medium">
                      Improve your productivity and gaming without breaking the bank. Upgrade to a high quality
                      mechanical typing experience.
                   </p>
